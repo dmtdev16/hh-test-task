@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val regex = Regex("(-?[0-9]+ )+(-?[0-9]+)")
+        val regex = Regex("((^| )-?([0]|[1-9][0-9]*))+")
 
         buttonGetMaxIndex.setOnClickListener {
             textViewResult.text = if (regex.matches(editTextInputArray.text.toString()))
