@@ -12,7 +12,6 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun getMaxElement_isCorrect() {
-        val arraySearcher = ArraySearcher()
-        assertEquals(2, arraySearcher.getArrayMaxIndex(arrayOf("1", "2", "3")))
+        assertEquals(2, Utils.getArrayMaxIndex(arrayOf("1", "2", "3")))
     }
 }

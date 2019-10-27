@@ -3,5 +3,5 @@
     <string name="button">Расчитать</string>
     <string name="index_max_element">Индекс максимального элемента: </string>
     <string name="wrong_format">Неверный формат входных данных!</string>
-    <string name="info">Введите элементы массива через пробел (не меньше двух)</string>
+    <string name="info">Введите элементы массива через пробел\n(не меньше двух)</string>
 </resources>

@@ -11,12 +11,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val regex = Regex("(-?[0-9]+ )+(-?[0-9]+)")
-        val arraySearcher = ArraySearcher()
 
         buttonGetMaxIndex.setOnClickListener {
             textViewResult.text = if (regex.matches(editTextInputArray.text.toString()))
                 getString(R.string.index_max_element) +
-                        arraySearcher.getArrayMaxIndex(editTextInputArray.text.toString().split(" ").toTypedArray()).toString()
+                        Utils.getArrayMaxIndex(editTextInputArray.text.toString().split(" ").toTypedArray()).toString()
             else getString(R.string.wrong_format)
         }
     }

@@ -1,6 +1,6 @@
 package com.example.myapplication
 
-class ArraySearcher {
+object Utils {
     fun getArrayMaxIndex(array: Array<String>) : Int {
         var maxValue = array[0]
         var maxIndex = 0
